@@ -1,0 +1,149 @@
+/* Resetear estilos por defecto del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+/* Estilos del cuerpo y contenedor */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    margin: 8%;
+}
+
+/* Estilos de los botones */
+.boton {
+    background-color: #3498db;
+    border: none;
+    padding: 20px;
+    margin: 5%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-grow: 1;
+    width: 10%;
+    height: auto;
+    position: relative;
+}
+
+.boton img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos de la descripción del botón */
+.boton .descripcion {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    top: 50%; /* Alinea verticalmente en el centro */
+    left: 50%; /* Alinea horizontalmente en el centro */
+    transform: translate(-50%, -50%); /* Centra el contenido */
+    white-space: nowrap;
+}
+
+/* Pseudo-selector hover */
+.boton:hover {
+    background-color: #2980b9;
+}
+
+/* Pseudo-selector hover para la descripción */
+.boton:hover .descripcion {
+    display: block;
+}
+
+.introduccion {
+
+    width: 80%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 8%;
+    text-align: justify; /* Para centrar el contenido horizontalmente */
+    margin-bottom: 20%;
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.parrafo{
+    margin-bottom: 2%;
+}
+.texto_1{
+    text-align: center; 
+}
+
+
+/* CSS */
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.footer {
+    text-align: center;
+}

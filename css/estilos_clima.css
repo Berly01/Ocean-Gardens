@@ -1,0 +1,158 @@
+/* Resetear estilos por defecto del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Define la animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Empieza con opacidad 0 (invisible) */
+    }
+    to {
+        opacity: 1; /* Termina con opacidad 1 (visible) */
+    }
+}
+
+/* Aplica la animación a elementos con la clase "fadeIn" */
+.fadeIn {
+    animation: fadeIn 1.5s ease-in-out; /* Duración y efecto de animación */
+}
+
+
+.titulo-vertical {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh; /* Altura igual al 100% del viewport */
+    background-color: #333; /* Color de fondo del título */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinea el contenido desde la parte superior */
+    align-items: center;
+    writing-mode: vertical-rl; /* Texto vertical de arriba hacia abajo */
+    text-align: center;
+    padding: 10px;
+    margin-right: 80%;
+
+}
+
+.titulo-vertical h1 {
+    margin: 0;
+    color: white; /* Color del texto del título */
+
+}
+
+.intro {
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Cambiar la dirección de los elementos a columna */
+    align-items: center;
+    justify-content: center; /* Centrar verticalmente en el contenedor principal */
+    width: 70%;
+    height: 200%;
+    margin-left: 20%;
+    margin-top: 2%;
+    text-align: center; /* Texto justificado */
+}
+
+.intro p {
+    font-weight: bold; /* Hacer que el texto sea negrita */
+}
+
+.principal{
+    background-color: #ffffff; /* Fondo blanco transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    display: flex;
+    flex-direction: column; /* Cambiar la dirección de los elementos a columna */
+    align-items: center; /* Centrar horizontalmente en el contenedor principal */
+    width: 70%;
+    height: 200%;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+.fila1{
+    
+    width: 80%;
+    height: 40%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centrar el texto horizontalmente */
+    margin-bottom: 20px;
+    margin-top: 2%;
+
+}
+
+.col1{
+    flex-basis: 60%; /* Ancho de la primera columna */
+    margin-right: 5%; /* Margen derecho entre las columnas */
+    
+    text-align: justify;
+    animation: fadeIn 1.5s ease-in-out; /* Duración y efecto de animación */
+}
+
+.col2{
+     width: 40%;
+     height: auto%;
+}
+.imagen1 {
+    width: 70%;
+    height: auto; /* Ajustar la altura automáticamente para mantener la proporción original */
+    display: block; /* Alinear la imagen horizontalmente en su contenedor */
+    margin: 0 auto; /* Centrar horizontalmente la imagen en su contenedor */
+    animation: fadeIn 1.5s ease-in-out; /* Duración y efecto de animación */
+}
+
+
+.fila2{
+      ;
+    width: 80%;
+    height: 20%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: justify; /* Centrar el texto horizontalmente */
+    margin-bottom: 20px;
+    margin-top: 2%;
+}
+
+
+.fila3{
+   
+    width: 80%;
+    height: 30%;
+    display: flex;
+
+    align-items: center;
+    text-align: justify; /* Centrar el texto horizontalmente */
+    margin-bottom: 20px;
+    margin-top: 2%;
+}
+.col5{
+     width: 45%;
+     height: auto;
+}
+
+.col4{
+    flex-basis: 50%; /* Ancho de la primera columna */
+    margin-right: 5%; /* Margen derecho entre las columnas */
+    
+    text-align: justify;
+    animation: fadeIn 1.5s ease-in-out; /* Duración y efecto de animación */
+}
+
+.imagen2 {
+    width: 70%;
+    height: auto; /* Ajustar la altura automáticamente para mantener la proporción original */
+    display: block; /* Alinear la imagen horizontalmente en su contenedor */
+    margin: 0 auto; /* Centrar horizontalmente la imagen en su contenedor */
+    animation: fadeIn 1.5s ease-in-out; /* Duración y efecto de animación */
+}
+

@@ -1,0 +1,362 @@
+.card img {
+    height: 10rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-text {
+    font-size: 0.8rem;
+}
+
+.img-fluid {
+    border-radius: 2rem;
+}
+
+.info-ocean {
+    width: 100%;
+    display: flex;
+    height: 700px;
+    background: linear-gradient(70deg, rgba(3, 3, 104, 0.89), rgba(6, 134, 91, 0.514)), url(../images/tourist-island.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-ocean p {
+    padding-top: 1.25rem;
+}
+
+/*
+.info-ocean-1:hover {
+    border-color: #050357;
+}*/
+
+.info-ocean-1 {
+    padding: 5rem;
+    border: 2px solid transparent;
+    /* Borde transparente por defecto */
+    /* Fondo del div con color transparente */
+    /*background-color: rgba(8, 8, 77, 0.7);*/
+    transition: border-color 1s;
+    border-radius: 2rem;
+}
+
+@media (max-width: 991px) {
+    .info-ocean-1 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .info-ocean img {
+        padding: .75rem;
+    }
+
+
+    .info-ocean-1 {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+
+    .info-ocean-1 .col-md-6 {
+        padding: 2rem;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 612px) {
+    .info-ocean-1 {
+        padding: 0;
+    }
+}
+
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    /* Cambia el color de fondo según tu diseño */
+    color: white;
+    /* Cambia el color del texto según tu diseño */
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: opacity 5s ease-in-out;
+    opacity: 0;
+    /* Asegura que esté por encima de otros elementos */
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+    /* Cambia el color de fondo en el hover */
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    /* Cuando se muestra, establece la opacidad en 1 */
+}
+
+
+
+.slider {
+    height: 40rem;
+
+}
+
+.slider img {
+    object-fit: cover;
+    height: 40rem;
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0px;
+    right: 0;
+    background-color: rgb(2, 9, 73, 0.3);
+    height: 40rem;
+    width: 100vw;
+    font-family: 'Gabarito';
+}
+
+.display-2 {
+    padding-top: 16rem;
+}
+
+.carousel-caption p {
+    padding: 0 15rem;
+}
+
+
+
+
+
+
+
+.lugares-right {
+    width: 100%;
+    display: flex;
+    height: 700px;
+    /*background: radial-gradient(circle at right, rgba(1, 2, 49, 0.281), rgba(4, 5, 78, 0.7), rgb(1, 6, 51) 70%),
+        transparent;*/
+    background: linear-gradient(rgba(3, 3, 124), rgba(25, 5, 207, 0.2));
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.lugares-right {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.radial-gradient-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at right, rgba(1, 2, 49, 0.281), rgba(4, 5, 78, 0.7), rgb(1, 6, 51) 70%);
+    background-size: cover;
+}
+
+*/
+
+
+.lugares-left {
+    width: 100%;
+    display: flex;
+    height: 700px;
+    background: linear-gradient(rgba(14, 116, 90, 0.432), rgba(68, 80, 150, 0.582), rgba(2, 10, 80, 0.932));
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.lugares-right p {
+    padding-top: 1.25rem;
+}
+
+
+#to-visit {
+    padding: 5rem;
+    transition: border-color 1s;
+    border-radius: 2rem;
+}
+
+
+.title-section {
+    height: 15rem;
+    background-color: rgb(4, 73, 73);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*padding en la izquierda y derecha de 2 rem*/
+    padding: 0 6em;
+    background: linear-gradient(70deg, rgba(0, 0, 255, 0.349), rgba(25, 122, 58, 0.534)), url(../images/peces.jpg);
+    background-size: cover;
+}
+
+.title-section h1 {
+    font-size: 2.5rem;
+}
+
+@media (width <=596px) {
+    .title-section {
+        padding: 0 2em;
+    }
+
+    .title-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .title-section p {
+        font-size: 0.75rem;
+    }
+}
+
+
+/*///////////////////*/
+/* LUGARES A VISITAR */
+/*///////////////////*/
+
+.place-1,
+.place-2,
+.place-3 {
+    overflow: hidden;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.video-text-1 {
+    background: linear-gradient(70deg, rgba(8, 35, 124, 0.295), rgba(46, 8, 116, 0.425)), url(../images/tailandia-wallpaper.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.video-text-2 {
+    background: linear-gradient(70deg, rgba(8, 35, 124, 0.295), rgba(46, 8, 116, 0.425)), url(../images/australia-wallpaper.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.video-text-3 {
+    background: linear-gradient(70deg, rgba(8, 35, 124, 0.295), rgba(46, 8, 116, 0.425)), url(../images/maldivas-wallpaper.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.video-place {
+    width: 50%;
+    height: 100%;
+}
+
+.place-1 video,
+.place-2 video,
+.place-3 video {
+    height: 40rem;
+    object-fit: cover;
+}
+
+@media (width <=716px) {
+
+    .place-1,
+    .place-3 {
+        overflow: hidden;
+        height: 60rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .place-2 {
+        overflow: hidden;
+        height: 60rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video-text-1,
+    .video-text-2,
+    .video-text-3 {
+        width: 100%;
+        height: 50%;
+    }
+
+    .video-place {
+        width: 100%;
+        height: 50%;
+    }
+
+    .place-1 video,
+    .place-2 video,
+    .place-3 video {
+        height: 40rem;
+        object-fit: cover;
+    }
+
+    /* FOOTER*/
+
+    .contenedor-footer {
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4 {
+        border: none;
+    }
+
+    .content-foo p {
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final {
+        font-size: 20px;
+    }
+}
